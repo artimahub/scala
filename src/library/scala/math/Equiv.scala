@@ -32,7 +32,7 @@ import scala.annotation.migration
  */
 
 trait Equiv[T] extends Any with Serializable {
-  /** Returns `true` iff `x` is equivalent to `y`.
+  /** Returns `true` if `x` is equivalent to `y`.
    */
   def equiv(x: T, y: T): Boolean
 }

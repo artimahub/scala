@@ -15,7 +15,7 @@ package scala.annotation.unchecked
 import scala.annotation.StaticAnnotation
 
 /**
- * Marking a definition `@uncheckedOverride` is equivalent to the `override` keyword, except that overriding is not
+ * Marks a definition as `@uncheckedOverride`, which is equivalent to the `override` keyword, except that overriding is not
  * enforced. A definition marked `@uncheckedOverride` is allowed to override nothing.
  */
 final class uncheckedOverride extends StaticAnnotation

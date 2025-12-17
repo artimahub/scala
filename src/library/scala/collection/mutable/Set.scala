@@ -41,7 +41,7 @@ trait SetOps[A, +CC[X], +C <: SetOps[A, CC, C]]
   /** Check whether the set contains the given element, and add it if not.
    *
    *  @param elem  the element to be added
-   *  @return true if the element was added
+   *  @return `true` if the element was added
    */
   def add(elem: A): Boolean =
     !contains(elem) && {
@@ -69,7 +69,7 @@ trait SetOps[A, +CC[X], +C <: SetOps[A, CC, C]]
   /** Removes an element from this set.
    *
    *  @param elem     the element to be removed
-   *  @return true if this set contained the element before it was removed
+   *  @return `true` if this set contained the element before it was removed
    */
   def remove(elem: A): Boolean = {
     val res = contains(elem)

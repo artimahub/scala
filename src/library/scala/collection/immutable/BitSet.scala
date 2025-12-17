@@ -221,7 +221,7 @@ object BitSet extends SpecificIterableFactory[Int, BitSet] {
           * Array Shrinking:
           * If `this` is not longer than `bs`, then since we must iterate through the full array of words,
           * we can track the new highest index word which is non-zero, at little additional cost. At the end, the new
-          * Array[Long] allocated for the returned BitSet will only be of size `maxNonZeroIndex + 1`
+          * `Array[Long]` allocated for the returned `BitSet` will only be of size `maxNonZeroIndex + 1`
           *
           * Tracking Changes:
           * If the two sets are disjoint, then we can return `this`. Therefor, until at least one change is detected,

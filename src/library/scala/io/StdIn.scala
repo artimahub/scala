@@ -22,14 +22,14 @@ import java.text.MessageFormat
 private[scala] trait StdIn {
   import scala.Console._
 
-  /** Read a full line from the default input.  Returns `null` if the end of the
+  /** Reads a full line from the default input.  Returns `null` if the end of the
    * input stream has been reached.
    *
    * @return the string read from the terminal or null if the end of stream was reached.
    */
   def readLine(): String = in.readLine()
 
-  /** Print and flush formatted text to the default output, and read a full line from the default input.
+  /** Prints and flushes formatted text to the default output, and reads a full line from the default input.
    *  Returns `null` if the end of the input stream has been reached.
    *
    *  @param text the format of the text to print out, as in `printf`.
@@ -45,7 +45,7 @@ private[scala] trait StdIn {
   /** Reads a boolean value from an entire line of the default input.
    *  Has a fairly liberal interpretation of the input.
    *
-   *  @return the boolean value read, or false if it couldn't be converted to a boolean
+   *  @return the boolean value read, or `false` if it couldn't be converted to a boolean
    *  @throws java.io.EOFException if the end of the input stream has been reached.
    */
   def readBoolean(): Boolean = {
@@ -64,7 +64,7 @@ private[scala] trait StdIn {
 
   /** Reads a byte value from an entire line of the default input.
    *
-   *  @return the Byte that was read
+   *  @return the `Byte` that was read
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.NumberFormatException if the value couldn't be converted to a Byte
@@ -94,7 +94,7 @@ private[scala] trait StdIn {
 
   /** Reads a char value from an entire line of the default input.
    *
-   *  @return the Char that was read
+   *  @return the `Char` that was read
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.StringIndexOutOfBoundsException if the line read from default input was empty
@@ -109,7 +109,7 @@ private[scala] trait StdIn {
 
   /** Reads an int value from an entire line of the default input.
    *
-   *  @return the Int that was read
+   *  @return the `Int` that was read
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.NumberFormatException if the value couldn't be converted to an Int
@@ -124,7 +124,7 @@ private[scala] trait StdIn {
 
   /** Reads an long value from an entire line of the default input.
    *
-   *  @return the Long that was read
+   *  @return the `Long` that was read
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.NumberFormatException if the value couldn't be converted to a Long
@@ -138,7 +138,7 @@ private[scala] trait StdIn {
   }
 
   /** Reads a float value from an entire line of the default input.
-   *  @return the Float that was read.
+   *  @return the `Float` that was read.
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.NumberFormatException if the value couldn't be converted to a Float
@@ -154,7 +154,7 @@ private[scala] trait StdIn {
 
   /** Reads a double value from an entire line of the default input.
    *
-   *  @return the Double that was read.
+   *  @return the `Double` that was read.
    *  @throws java.io.EOFException if the end of the
    *  input stream has been reached.
    *  @throws java.lang.NumberFormatException if the value couldn't be converted to a Float

@@ -13,6 +13,6 @@
 package scala.annotation.meta
 
 /**
- * Consult the documentation in package [[scala.annotation.meta]].
+ * See the documentation in package [[scala.annotation.meta]].
  */
 final class beanSetter extends scala.annotation.StaticAnnotation

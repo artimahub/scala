@@ -1258,7 +1258,7 @@ object LazyList extends SeqFactory[LazyList] {
     }
 
   /**
-    * Create an infinite LazyList starting at `start` and incrementing by
+    * Creates an infinite LazyList starting at `start` and incrementing by
     * step `step`.
     *
     * @param start the start value of the LazyList
@@ -1269,7 +1269,7 @@ object LazyList extends SeqFactory[LazyList] {
     newLL(eagerCons(start, from(start + step, step)))
 
   /**
-    * Create an infinite LazyList starting at `start` and incrementing by `1`.
+    * Creates an infinite LazyList starting at `start` and incrementing by `1`.
     *
     * @param start the start value of the LazyList
     * @return the LazyList starting at value `start`.
@@ -1277,7 +1277,7 @@ object LazyList extends SeqFactory[LazyList] {
   def from(start: Int): LazyList[Int] = from(start, 1)
 
   /**
-    * Create an infinite LazyList containing the given element expression (which
+    * Creates an infinite LazyList containing the given element expression (which
     * is computed for each occurrence).
     *
     * @param elem the element composing the resulting LazyList

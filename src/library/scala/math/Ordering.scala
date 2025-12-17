@@ -88,19 +88,19 @@ trait Ordering[T] extends Comparator[T] with PartialOrdering[T] with Serializabl
    */
   def compare(x: T, y: T): Int
 
-  /** Return true if `x` <= `y` in the ordering. */
+  /** Return `true` if `x` <= `y` in the ordering. */
   override def lteq(x: T, y: T): Boolean = compare(x, y) <= 0
 
-  /** Return true if `x` >= `y` in the ordering. */
+  /** Return `true` if `x` >= `y` in the ordering. */
   override def gteq(x: T, y: T): Boolean = compare(x, y) >= 0
 
-  /** Return true if `x` < `y` in the ordering. */
+  /** Return `true` if `x` < `y` in the ordering. */
   override def lt(x: T, y: T): Boolean = compare(x, y) < 0
 
-  /** Return true if `x` > `y` in the ordering. */
+  /** Return `true` if `x` > `y` in the ordering. */
   override def gt(x: T, y: T): Boolean = compare(x, y) > 0
 
-  /** Return true if `x` == `y` in the ordering. */
+  /** Return `true` if `x` == `y` in the ordering. */
   override def equiv(x: T, y: T): Boolean = compare(x, y) == 0
 
   /** Return `x` if `x` >= `y`, otherwise `y`. */
