@@ -1,0 +1,26 @@
+
+Build the Standard Library Scaladoc
+
+  In sbt shell:
+
+  library/doc
+
+  Or to build docs for all projects at once:
+  doc
+
+  View the Result
+
+  The generated documentation is output to:
+
+  build/scaladoc/library/
+
+  Open the index file in your browser:
+
+  # From the repository root
+  open build/scaladoc/library/index.html        # macOS
+  xdg-open build/scaladoc/library/index.html    # Linux
+
+  You can also build docs for other projects:
+  - reflect/doc → build/scaladoc/reflect/
+  - compiler/doc → build/scaladoc/compiler/
+  - scalap/doc → build/scaladoc/scalap/
