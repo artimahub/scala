@@ -119,7 +119,7 @@ object Source {
   def fromRawBytes(bytes: Array[Byte]): Source =
     fromString(new String(bytes, Codec.ISO8859.charSet))
 
-  /** Creates source from file with given file: `URI`.
+  /** Creates `Source` from file with given file: `URI`.
    */
   def fromURI(uri: URI)(implicit codec: Codec): BufferedSource =
     fromFile(new JFile(uri))(codec)
